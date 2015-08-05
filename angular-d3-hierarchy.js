@@ -4,7 +4,8 @@ angular.module('angular-d3-hierarchy', [])
 		scope: {
 			d3Hierarchy: '=',
 			width: '=?',
-			height: '=?'
+			height: '=?',
+			depth: '=?'
 		},
 		restrict: 'AE',
 		controller: function($scope, $element) {
@@ -14,7 +15,7 @@ angular.module('angular-d3-hierarchy', [])
 					//.diameter(500)
 					.radius(function(d) { if( d.size ) { return Math.log(d.size) } else { return 5 }; })
 					.zoomable([0.1, 3])
-					.collapsible(1)
+					.collapsible($scope.depth || 1)
 					//.duration(200)
 					//.sortable("_ASC") 
 					;
