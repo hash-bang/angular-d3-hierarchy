@@ -15,7 +15,7 @@
     "hierarchy"
   ],
   "license": "MIT",
-  "homepage": "FIXME",
+  "homepage": "http://momsfriendlydevco.github.io/ng-mfdc",
   "dependencies": {
     "d3.chart.layout.hierarchy": "~0.3.4"
   }
